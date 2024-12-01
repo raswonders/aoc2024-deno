@@ -24,7 +24,7 @@ arrB.forEach(item => {
   }
 })
 
-const sumSimilarity = arrA.reduce((acc, valA, i) => {
+const sumSimilarity = arrA.reduce((acc, valA) => {
   acc += indexB.has(valA) ? valA * indexB.get(valA) : 0;
   return acc;
 }, 0)
